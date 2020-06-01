@@ -25,15 +25,15 @@ print(" FHE resource_group = ",resource_group)
 subscription_id = dbutils.secrets.get(scope = "azureml", key = "subscription_id")
 print(" FHE subscription_id = ",subscription_id)
 
-client_id = dbutils.secrets.get(scope = "azureml", key = "client_id")
-print(" FHE client_id = ",client_id)
+service_principal_id = dbutils.secrets.get(scope = "azureml", key = "client_id")
+print(" FHE client_id = ",service_principal_id)
 
 tenant_id = dbutils.secrets.get(scope = "azureml", key = "tenant_id")
 print(" FHE tenant_id = ",tenant_id)
 
 print(" ************************************* ")
 service_principal_password = dbutils.secrets.get(scope = "azureml", key = "client_secret")
-print(" FHE client_secret = ",client_secret)
+print(" FHE client_secret = ",service_principal_password)
 print(" ************************************* ")
 
 svc_pr = ServicePrincipalAuthentication(
