@@ -19,8 +19,11 @@ from azureml.core.authentication import ServicePrincipalAuthentication
 
 workspace_name = dbutils.secrets.get(scope = "azureml", key = "workspace_name")
 workspace_location = "westeurope"
+print(" FHE workspace_name = ",workspace_name)
 resource_group = dbutils.secrets.get(scope = "azureml", key = "resource_group")
+print(" FHE resource_group = ",resource_group)
 subscription_id = dbutils.secrets.get(scope = "azureml", key = "subscription_id")
+print(" FHE subscription_id = ",subscription_id)
 
 svc_pr = ServicePrincipalAuthentication(
     tenant_id = dbutils.secrets.get(scope = "azureml", key = "tenant_id"),
