@@ -10,7 +10,7 @@ If you want to run this example in Azure DevOps, you need to prepare you envirom
 
 ## Required Accounts And Resources
 
-needs: https://docs.microsoft.com/fr-fr/azure/azure-databricks/databricks-cli-from-azure-cloud-shell
+needs go throw : https://docs.microsoft.com/fr-fr/azure/azure-databricks/databricks-cli-from-azure-cloud-shell
 
 This examples uses Azure DevOps as an CI/CD toolset, as well as the Microsoft Azure platform to host you trained Machine Learning Model.
 
