@@ -15,7 +15,7 @@ variables:
   databricks.cluster.node_type_id: Standard_DS3_v2
   databricks.cluster.driver_node_type_id: Standard_DS3_v2
   databricks.cluster.autotermination_minutes: 15
-  databricks.cluster.workers.min: 1
+  databricks.cluster.workers.min: 2
   databricks.cluster.workers.max: 4
   databricks.job.train.name: Wine Quality (Train)
   databricks.job.train.id:
